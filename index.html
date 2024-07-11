@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Tab Navigation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="tabs">
+      <button class="tab-link active" onclick="openTab(event, 'Tab1')">
+        <i class="fas fa-rss"></i> Subscribe
+      </button>
+      <button class="tab-link" onclick="openTab(event, 'Tab2')">
+        <i class="fas fa-thumbs-up"></i> Like
+      </button>
+      <button class="tab-link" onclick="openTab(event, 'Tab3')">
+        <i class="fas fa-share-alt"></i> Share
+      </button>
+      <button class="tab-link thank-you" onclick="showThankYou()">
+        Thank You!
+      </button>
+    </div>
+
+    <div id="Tab1" class="tab-content active">
+      <h2>Subscribe</h2>
+      <p>Subscribe to get more content</p>
+    </div>
+
+    <div id="Tab2" class="tab-content">
+      <h2>Like & Comment</h2>
+      <p>Comment for next content</p>
+    </div>
+
+    <div id="Tab3" class="tab-content">
+      <h2>Share</h2>
+      <p>Checkout the code in description</p>
+    </div>
+
+    <div id="ThankYou" class="tab-content">
+      <h2>Thank You!</h2>
+      <p>Thank you for your support!</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
